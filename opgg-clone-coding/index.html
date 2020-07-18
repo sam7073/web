@@ -1,0 +1,491 @@
+<html>
+  <head>
+    <title>opgg</title>
+    <meta charset="utf-8" />
+    <style>
+      body {
+        background-color: #5383e8;
+        margin: 0px;
+      }
+      #game-menu-container {
+        background-color: #232f46;
+        display: flex;
+        height: 40px;
+        width: 100%;
+        justify-content: left;
+        align-items: center;
+      }
+      #logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #5383e8;
+      }
+      #game-menu-item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        background-color: #5383e8;
+        height: 40px;
+        font-size: 12px;
+      }
+      #game-menu-item a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        vertical-align: middle;
+      }
+      #game-menu-item2 {
+        background-color: #232f46;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 4px;
+        padding-left: 8px;
+        padding-right: 8px;
+        font-size: 12px;
+      }
+      #game-menu-item2 a {
+        display: flex;
+        color: #c3cbd1;
+        justify-content: center;
+        align-items: center;
+      }
+      a {
+        text-decoration: none;
+      }
+      .menu-text {
+        margin-left: 8px;
+      }
+      .lang {
+        float: right;
+        display: flex;
+        align-items: center;
+        color: white;
+        font-size: 12px;
+        margin-left: auto;
+        margin-right: 20px;
+      }
+      .login {
+        float: right;
+        margin-right: 20px;
+        border-radius: 4px;
+        border: 1px solid #5383e8;
+        background-color: #5383e8;
+        color: white;
+        font-size: 12px;
+        width: 80px;
+        height: 27px;
+      }
+      .N {
+        background-color: #ffb900;
+        border-radius: 50%;
+        color: black;
+        margin-left: 8px;
+        width: 16px;
+        height: 16px;
+        text-align: center;
+        font-weight: bold;
+      }
+      #function-menu {
+        height: 48px;
+        display: flex;
+        align-items: center;
+      }
+      .function-first-item {
+        display: inline;
+        margin-left: 109px;
+        color: white;
+        font-size: 15px;
+      }
+      .function-item {
+        display: inline;
+        margin-left: 24px;
+        color: white;
+        font-size: 15px;
+      }
+      #comment {
+        display: flex;
+        align-items: center;
+        color: white;
+        background-color: rgb(41 65 116);
+        height: 40px;
+        font-size: 12px;
+        padding-left: 220px;
+      }
+      #main-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+      }
+      #searchform {
+        width: 624px;
+        height: 50px;
+        border-radius: 2px;
+        display: flex;
+        align-items: center;
+        margin-left: 228px;
+        margin-right: 228px;
+        margin-bottom: 0px;
+        position: relative;
+      }
+      #searchtext {
+        padding-left: 17;
+        padding-top: 15;
+        padding-right: 150;
+        padding-bottom: 18;
+        width: 100%;
+        line-height: 17px;
+        border: none;
+      }
+      #searchbutton {
+        position: absolute;
+        right: 0;
+        margin-right: 10px;
+        width: 50px;
+        height: 30px;
+        background-color: #00a9ff;
+        color: white;
+        border: 1px solid #00a9ff;
+        border-radius: 2px;
+        font-weight: bold;
+      }
+      #langbutton {
+        position: absolute;
+        right: 90;
+        background-color: rgb(170, 170, 170);
+        color: white;
+        border: none;
+        height: 13px;
+        width: 25px;
+        font-size: 10px;
+      }
+      #ad {
+        width: 970px;
+        height: 254px;
+        margin-top: 30px;
+      }
+      #best {
+        display: grid;
+        margin-top: 30px;
+        width: 1080px;
+        height: 400px;
+        background-color: white;
+        grid-template-columns: 1fr 1fr;
+      }
+      #gridheader {
+        border-bottom: 1px solid #f5f5f5;
+        grid-column: 1 / span 2;
+        display: flex;
+        align-items: center;
+        padding-left: 20px;
+        font-weight: bold;
+        color: black;
+        font-size: 15px;
+        height: 50px;
+      }
+      #gridleftitem {
+        border-bottom: 1px solid #f5f5f5;
+        border-right: 1px solid #f5f5f5;
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+        padding-top: 5px;
+        padding-bottom: 5px;
+      }
+      #gridrightitem {
+        border-bottom: 1px solid #f5f5f5;
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+        padding-top: 5px;
+        padding-bottom: 5px;
+      }
+      .bestnum {
+        color: green;
+        padding-left: 25px;
+      }
+      .bestphoto {
+        margin-left: 25px;
+        width: 100px;
+      }
+      #footer {
+        width: 1080px;
+      }
+      .footer-item {
+        display: inline;
+        list-style-type: none;
+        font-size: 12px;
+        padding-right: 10px;
+      }
+      .footer-item a {
+        color: white;
+      }
+      .copyright {
+        color: white;
+        font-size: 11px;
+      }
+      .best-contents {
+        width: 100%;
+        height: 100%;
+        margin-left: 25px;
+        display: flex;
+        flex-direction: column;
+        color: black;
+        font-size: 14px;
+      }
+      .best-title {
+        margin-top: 10px;
+      }
+      .comment-count {
+        color: lightskyblue;
+        font-size: 14px;
+      }
+      .best-info {
+        color: #879292;
+        margin-top: 6px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="game-menu-container">
+      <div id="logo" style="width: 98px; height: 40px;">
+        <a href="" style="padding-top: 12px; padding-bottom: 12px;">
+          <img src="images/opgg.png" alt="logo" width="65" />
+        </a>
+      </div>
+      <div id="game-menu-item">
+        <a style="padding-left: 4px; padding-right: 12px;">
+          <img src="images/nav-lol.png" alt="lol" width="24" />
+          <span class="menu-text">리그오브레전드</span>
+        </a>
+      </div>
+      <div id="game-menu-item2">
+        <a href="">
+          <img src="images/img-navi-next-gray.png" alt="NEXT" width="24" />
+          <span class="N">N</span>
+          <span class="menu-text">NEXT</span>
+        </a>
+      </div>
+      <div id="game-menu-item2">
+        <a href="">
+          <img src="images/img-navi-pubg-gray.png" alt="PUBG" width="24" />
+          <span class="menu-text">배틀그라운드</span>
+        </a>
+      </div>
+      <div id="game-menu-item2">
+        <a href="">
+          <img src="images/img-navi-overwatch-gray.png" alt="OW" width="24" />
+          <span class="menu-text">오버워치</span>
+        </a>
+      </div>
+      <div id="game-menu-item2">
+        <a href="">
+          <img src="images/img-navi-fortnite-gray.png" alt="FN" width="24" />
+          <span class="menu-text">포트나이트</span>
+        </a>
+      </div>
+      <div id="game-menu-item2">
+        <a href="">
+          <img src="images/img-navi-r-6-gray.png" alt="RS" width="24" />
+          <span class="menu-text">레인보우식스 시즈</span>
+        </a>
+      </div>
+      <div id="game-menu-item2">
+        <a href="">
+          <img src="images/img-navi-talk-gray.png" alt="talk" width="24" />
+          <span class="menu-text">톡피지지</span>
+        </a>
+      </div>
+      <div class="lang">
+        <img src="images/lang.png" alt="language" width="24" />
+        <span class="menu-text" style="color: rgb(170, 170, 170);">한국어</span>
+      </div>
+      <button class="login">로그인</button>
+    </div>
+    <div id="function-menu">
+      <a href="" class="function-first-item">#집에있자</a>
+      <a href="" class="function-item">챔피언 분석</a>
+      <a href="" class="function-item">통계</a>
+      <a href="" class="function-item">랭킹</a>
+      <a href="" class="function-item">프로관전</a>
+      <a href="" class="function-item">멀티서치</a>
+      <a href="" class="function-item">커뮤니티</a>
+    </div>
+    <div id="comment">
+      살아남는 자만을 위한 동양 판타지, 전략 PvP 헌터스 아레나 7월 16일 등판!
+    </div>
+    <div id="main-container">
+      <div class="mainlogo" style="padding-top: 32; padding-bottom: 24;">
+        <img
+          src="images/mainlogo.png"
+          alt="mainopgg"
+          width="452"
+          height="200"
+        />
+      </div>
+      <form action="/" id="searchform">
+        <input
+          type="text"
+          id="searchtext"
+          placeholder="소환사명, 소환사명, ..."
+        />
+        <button id="searchbutton">
+          .GG
+        </button>
+        <button id="langbutton">KR</button>
+      </form>
+      <div id="ad"><img src="images/ad.jpg" alt="add here" /></div>
+      <div id="best">
+        <a href="" id="gridheader">OP.GG Talk 인기글</a>
+        <a href="" id="gridleftitem">
+          <div class="bestnum">1</div>
+          <img src="images/1.jpg" alt="1" class="bestphoto" />
+          <div class="best-contents">
+            <div class="best-title">
+              돈없이 탱크사는법 <span class="comment-count">[177]</span>
+            </div>
+            <div class="best-info">
+              8시간 전 &nbsp;&nbsp;&nbsp;람머스랑구르는말파이트
+            </div>
+          </div>
+        </a>
+        <a href="" id="gridrightitem">
+          <div class="bestnum">6</div>
+          <img src="images/6.jpg" alt="6" class="bestphoto" />
+          <div class="best-contents">
+            <div class="best-title">
+              좋아하는 누나가 젤리 줌 <span class="comment-count">[239]</span>
+            </div>
+            <div class="best-info">
+              13시간 전 &nbsp;&nbsp;&nbsp;제라스장인이오
+            </div>
+          </div>
+        </a>
+        <a href="" id="gridleftitem">
+          <div class="bestnum">2</div>
+          <img src="images/2.jpg" alt="2" class="bestphoto" />
+          <div class="best-contents">
+            <div class="best-title">
+              구해주세요~해야지? <span class="comment-count">[71]</span>
+            </div>
+            <div class="best-info">
+              7시간 전 &nbsp;&nbsp;&nbsp;그곳을보여드림
+            </div>
+          </div>
+        </a>
+        <a href="" id="gridrightitem">
+          <div class="bestnum">7</div>
+          <div class="best-contents">
+            <div class="best-title">
+              화 잔뜩나서 친추 걸었나본데 ㅋㅋㅋㅋㅋㅋㅋㅋ<span
+                class="comment-count"
+                >[45]</span
+              >
+            </div>
+            <div class="best-info">
+              6시간 전 &nbsp;&nbsp;&nbsp;봄새봄
+            </div>
+          </div>
+        </a>
+        <a href="" id="gridleftitem">
+          <div class="bestnum">3</div>
+          <img src="images/3.jpg" alt="3" class="bestphoto" />
+          <div class="best-contents">
+            <div class="best-title">
+              야야 저여자 나한테 관심있는듯ㅋ<span class="comment-count"
+                >[75]</span
+              >
+            </div>
+            <div class="best-info">
+              7시간 전 &nbsp;&nbsp;&nbsp;Rakans
+            </div>
+          </div>
+        </a>
+        <a href="" id="gridrightitem">
+          <div class="bestnum">8</div>
+          <img src="images/8.jpg" alt="8" class="bestphoto" />
+          <div class="best-contents">
+            <div class="best-title">
+              20초를 낭비하고싶으면 오세요(혐주의)<span class="comment-count"
+                >[150]</span
+              >
+            </div>
+            <div class="best-info">
+              10시간 전 &nbsp;&nbsp;&nbsp;찰토마토
+            </div>
+          </div>
+        </a>
+        <a href="" id="gridleftitem">
+          <div class="bestnum">4</div>
+          <img src="images/4.jpg" alt="4" class="bestphoto" />
+          <div class="best-contents">
+            <div class="best-title">
+              ???:육식=성폭행? <span class="comment-count">[139]</span>
+            </div>
+            <div class="best-info">
+              6시간 전 &nbsp;&nbsp;&nbsp;버츠비
+            </div>
+          </div>
+        </a>
+        <a href="" id="gridrightitem">
+          <div class="bestnum">9</div>
+          <div class="best-contents">
+            <div class="best-title">
+              롤 못하는놈들특 <span class="comment-count">[83]</span>
+            </div>
+            <div class="best-info">
+              9시간 전 &nbsp;&nbsp;&nbsp;협곡레인저
+            </div>
+          </div>
+        </a>
+        <a href="" id="gridleftitem" style="border-bottom: none;">
+          <div class="bestnum">5</div>
+          <img src="images/5.png" alt="5" class="bestphoto" />
+          <div class="best-contents">
+            <div class="best-title">
+              챔피언들의 외모를 알아보자<span class="comment-count">[316]</span>
+            </div>
+            <div class="best-info">
+              12시간 전 &nbsp;&nbsp;&nbsp;너랑많고많은마법사랑
+            </div>
+          </div>
+        </a>
+        <a href="" id="gridrightitem" style="border-bottom: none;">
+          <div class="bestnum">10</div>
+          <img src="images/10.jpg" alt="10" class="bestphoto" />
+          <div class="best-contents">
+            <div class="best-title">
+              공포)롤클라에 귀신나옵니다 <span class="comment-count">[77]</span>
+            </div>
+            <div class="best-info">
+              8시간 전 &nbsp;&nbsp;&nbsp;나이브러니
+            </div>
+          </div>
+        </a>
+      </div>
+      <footer id="footer">
+        <ul style="padding-left: 0px;">
+          <li class="footer-item"><a href="">About OP.GG</a></li>
+          <li class="footer-item"><a href="">로고 히스토리</a></li>
+          <li class="footer-item"><a href="">개인정보처리방침</a></li>
+          <li class="footer-item"><a href="">도움말</a></li>
+          <li class="footer-item"><a href="">제휴</a></li>
+          <li class="footer-item"><a href="">문의/피드백</a></li>
+          <li class="footer-item"><a href="">채용</a></li>
+        </ul>
+        <div class="copyright">
+          © 2012-2020 OP.GG. OP.GG isn’t endorsed by Riot Games and doesn’t
+          reflect the views or opinions of Riot Games or anyone officially
+          involved in producing or managing League of Legends. League of Legends
+          and Riot Games are trademarks or registered trademarks of Riot Games,
+          Inc. League of Legends © Riot Games, Inc.
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
