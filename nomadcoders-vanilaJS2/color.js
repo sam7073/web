@@ -26,6 +26,7 @@ function changeColor(event) {
   });
   event.target.innerHTML = "v";
   context.strokeStyle = event.target.style.backgroundColor;
+  context.fillStyle = event.target.style.backgroundColor;
 }
 
 function init() {
