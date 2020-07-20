@@ -36,8 +36,13 @@
 - nomad coders 니꼴라스 보고 따라하기.
 - vanila JS로 만듦.
 - 그림판.
-- 진행 중
 - https://sam7073.github.io/web/nomadcoders-vanilaJS2
+
+### 3. sejong
+- 세종대 홈페이지 클론 코딩.
+- 기능까지 최대한 비슷하게 구현하기.
+- 진행 중
+- https://sam7073.github.io/web/sejong-clone-coding
 
 ---
 
