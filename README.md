@@ -10,6 +10,7 @@
 - 반응형 아님.
 - flex 박스 사용.
 - https://sam7073.github.io/web/instagram-clone-coding
+- 원본 사이트 : https://www.instagram.com/
 
 ### 2. op.gg
 
@@ -17,6 +18,7 @@
 - 반응형 아님.
 - flex 박스 사용, 인기 게시글 부분 grid 사용.
 - https://sam7073.github.io/web/opgg-clone-coding
+- 원본 사이트 : https://www.op.gg/
 
 ---
 
@@ -43,6 +45,7 @@
 - 기능까지 최대한 비슷하게 구현하기.
 - 진행 중
 - https://sam7073.github.io/web/sejong-clone-coding
+- 원본 사이트 : http://www.sejong.ac.kr/
 
 ---
 
