@@ -1,0 +1,169 @@
+body {
+  height: 100%;
+  display: flex;
+  margin: 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(var(--b3f, 250, 250, 250), 1);
+}
+.main {
+  height: 700px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style-type: none;
+}
+li {
+  display: inline;
+  font-size: 12px;
+  font-weight: bold;
+  margin-right: 10px;
+}
+li a {
+  color: darkblue;
+}
+.container {
+  width: 935px;
+  height: 618;
+  position: relative;
+  top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main-image {
+  width: 420px;
+  height: 600;
+}
+.right-container {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+.login {
+  border: 1px solid black;
+  background-color: white;
+  width: 350px;
+  height: 370px;
+  text-align: center;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border-color: rgba(var(--b38, 219, 219, 219), 1);
+}
+.idinput {
+  margin-bottom: 10px;
+}
+.pwinput {
+  margin-bottom: 20px;
+}
+input[type="text"],
+input[type="password"] {
+  background-color: rgba(var(--b38, 240, 240, 240), 1);
+  border: 1px solid rgba(var(--b38, 200, 200, 200), 1);
+  border-radius: 2px;
+  width: 250px;
+  height: 35px;
+}
+.logo {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+.loginbutton {
+  color: white;
+  background-color: cornflowerblue;
+  border: 1px solid cornflowerblue;
+  padding-bottom: 0px;
+  border-radius: 5px;
+  width: 250px;
+  height: 30px;
+  margin-bottom: 10px;
+}
+.line {
+  border-color: rgba(var(--b38, 219, 219, 219), 1);
+  border-bottom: 0px;
+  width: 90px;
+  float: left;
+}
+.ortext {
+  float: left;
+}
+.or {
+  margin-bottom: 20px;
+}
+.facebook {
+  margin-bottom: 20px;
+  color: darkblue;
+  font-size: 15px;
+  font-weight: bold;
+}
+.findpw {
+  color: darkblue;
+  font-size: 12px;
+}
+.signup {
+  border: 1px solid black;
+  border-color: rgba(var(--b38, 219, 219, 219), 1);
+  background-color: white;
+  width: 350px;
+  height: 40px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+.signupa {
+  font-weight: bold;
+  color: cornflowerblue;
+}
+.download {
+  background-color: rgba(var(--b3f, 250, 250, 250), 1);
+  width: 350px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  font-size: 15px;
+}
+.downloadapp {
+  width: 135px;
+  margin-top: 20px;
+}
+nav {
+  height: 28px;
+}
+footer {
+  width: 100%;
+  height: 104px;
+  display: flex;
+  justify-content: center;
+}
+footer div {
+  width: 1012px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer-ul {
+  margin: 0;
+}
+.footer-ul li {
+  display: inline-block;
+}
+.copyright {
+  text-align: center;
+  margin-left: auto;
+  margin-right: 30px;
+  color: rgba(var(--f52, 142, 142, 142), 1);
+  font-size: 12px;
+  height: 28px;
+}

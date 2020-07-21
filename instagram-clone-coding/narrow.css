@@ -1,0 +1,21 @@
+.main-image {
+  display: none;
+}
+footer div {
+  width: 100%;
+  flex-direction: column;
+}
+.footer-ul {
+  padding-left: 0;
+  width: 360px;
+  text-align: center;
+}
+nav {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+}
+.copyright {
+  margin: 0;
+}
