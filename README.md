@@ -7,7 +7,6 @@
 ### 1. instagram
 
 - html, css 문법만 사용해서 UI만 똑같게 만듦.
-- 반응형 아님.
 - flex 박스 사용.
 - https://sam7073.github.io/web/instagram-clone-coding
 - 원본 사이트 : https://www.instagram.com/
