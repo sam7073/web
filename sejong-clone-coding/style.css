@@ -28,9 +28,11 @@ a {
   text-decoration: none;
 }
 footer {
-  width: 1230px;
+  width: 100%;
   height: 160px;
   background-color: #1b1b1b;
+  display: flex;
+  flex-direction: column;
 }
 input:focus,
 select:focus,
@@ -339,8 +341,9 @@ ul {
   position: relative;
 }
 .banner-images {
-  width: 2640px;
+  width: 3300px;
   height: 175px;
+  transform: translate3d(-330px, 0px, 0px);
 }
 .banner-image {
   float: left;
@@ -361,7 +364,7 @@ ul {
   position: absolute;
   top: 8px;
   right: 8px;
-  border: 1px solid red;
+  font-size: 0px;
 }
 .button-container {
   width: 14px;
@@ -376,30 +379,25 @@ ul {
   display: inline-block;
 }
 .banner-prev-btn {
+  width: 100%;
+  height: 100%;
   background: url(http://sejong.ac.kr/sogood_sm/2018_05_30/btn_prev.png);
 }
 .banner-play-btn {
-  width: 12px;
-  height: 14px;
-  color: #666;
-  padding: 0;
+  width: 100%;
+  height: 100%;
   background-image: url(http://sejong.ac.kr/sogood_sm/2018_05_30/btn_play.png);
   display: none;
 }
 .banner-pause-btn {
-  width: 12px;
-  height: 14px;
-  color: #666;
-  padding: 0;
+  width: 100%;
+  height: 100%;
   background-image: url(http://sejong.ac.kr/sogood_sm/2018_05_30/btn_pause.png);
   display: none;
 }
 .banner-next-btn {
-  width: 14px;
-  height: 14px;
-  color: #666;
-  padding: 0;
-  display: inline-block;
+  width: 100%;
+  height: 100%;
   background-image: url(http://sejong.ac.kr/sogood_sm/2018_05_30/btn_next.png);
 }
 .active-btn {
@@ -440,11 +438,40 @@ ul {
   width: 252px;
   height: 428px;
 }
+.zooyo-a {
+  width: 72px;
+  height: 42px;
+}
+.zooyo-pic {
+  display: flex;
+  justify-content: center;
+}
+.zooyo-text {
+  display: flex;
+  justify-content: center;
+  cursor: pointer !important;
+  text-decoration: none;
+  font-size: 12px;
+  color: white;
+  letter-spacing: -0.1em;
+  line-height: 18px;
+  text-align: center;
+}
+.zooyo-service-buttons {
+  padding: 0 18px;
+  width: 216px;
+  height: 438px;
+}
 .real-zooyo-services {
   width: 252px;
   height: 502px;
   margin-top: -72px;
   background: url(http://sejong.ac.kr/sogood_sm/2018_05_30/img5.png);
+}
+.zooyo-service-button-container {
+  display: inline-block;
+  width: 72px;
+  height: 73px;
 }
 .sns-achievement {
   width: 454px;
@@ -457,6 +484,7 @@ ul {
   height: 207px;
   border: 1px solid rgb(226, 227, 231);
   margin-bottom: 30px;
+  display: flex;
 }
 .sns-btn-container {
   width: 95px;
@@ -466,6 +494,7 @@ ul {
 .sns-contents {
   width: 358px;
   height: 208px;
+  padding: 15px;
   display: inline-block;
 }
 .sns-facebook-btn {
@@ -495,7 +524,76 @@ ul {
   background-image: url(http://www.sejong.ac.kr/img/main/banner/rightside_2004071333.png);
   background-color: aqua;
 }
-.footer {
-  width: 100%;
+.footer-nav-menus {
+  font-size: 0;
+  width: 1200px;
   background-color: #1b1b1b;
+  margin: 0 auto;
+}
+.footer-nav-menus li {
+  display: inline-block;
+}
+.footer-nav-menu {
+  font-weight: bold;
+  color: #999999;
+  font-size: 12px;
+  letter-spacing: -0.1em;
+  border-right: 2px solid #313131;
+  padding-right: 12px;
+  padding-left: 12px;
+}
+.footer-nav-menu:hover {
+  color: white;
+}
+.footer-contact-container {
+  padding: 0 15px;
+  background-color: #1b1b1b;
+  width: 1200px;
+  height: 99px;
+  font-size: 0;
+  margin: 0 auto;
+}
+.footer-contact {
+  width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+}
+.footer-contact-info {
+  width: 800px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.footer-contact-sitemap-container {
+  width: 400;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+select {
+  font-weight: bold;
+  font-size: 12px;
+  letter-spacing: -0.1em;
+  color: #555555;
+  width: 200px;
+  padding-left: 5px;
+  text-align: center;
+  background: white;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+  height: 40px;
+  line-height: 40px;
+  margin-left: auto;
+}
+.site-move-btn {
+  margin-left: 5px;
+  background: #a1203c;
+  color: white;
+  font-weight: bold;
+  font-size: 12px;
+  width: 64px;
+  height: 40px;
 }
