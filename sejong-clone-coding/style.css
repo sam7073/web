@@ -53,11 +53,53 @@ ul {
   padding: 0 15px;
   font: normal 12px / 1.3em "맑은고딕";
 }
+.header-li {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
 .header-menu {
   color: d0d3d5;
   font-size: 12px;
   font-weight: bold;
   padding-right: 12px;
+}
+.header-menu-dropdown {
+  display: none;
+  position: absolute;
+  background-color: #344551;
+  top: 35px;
+  z-index: 10;
+}
+.header-menu-dropdown ul {
+  padding: 20px;
+  box-sizing: border-box;
+  background: #344551;
+  left: 0px;
+  width: 420px;
+  font-size: 0;
+}
+.header-menu-dropdown ul li {
+  padding: 4px 0;
+  box-sizing: border-box;
+  display: inline-block;
+  vertical-align: top;
+  width: 33.33%;
+}
+.header-menu-dropdown ul li a {
+  display: block;
+  color: white;
+  font-size: 12px;
+  letter-spacing: -0.1em;
+}
+.header-menu-dropdown ul li a:hover {
+  text-decoration: underline;
+}
+.header-li:hover .header-menu-dropdown {
+  display: block;
+}
+.header-menu-dropdown:hover {
+  display: block;
 }
 .with-partition {
   border-left: 2px solid #5a6a76;
@@ -111,6 +153,31 @@ ul {
   font-size: 17px;
   padding-left: 26px;
   padding-right: 26px;
+  padding-bottom: 45px;
+}
+.nav-menu-dropdown {
+  padding-left: 30px;
+  padding-right: 30px;
+  background: rgba(49, 56, 63, 0.9);
+  white-space: nowrap;
+  z-index: 10;
+  display: none;
+  position: absolute;
+  top: 100px;
+}
+.nav-menu-dropdown li {
+  position: relative;
+  vertical-align: top;
+  display: inline-block;
+}
+.nav-menu-dropdown li a {
+  line-height: 35px;
+  font-size: 12px;
+  letter-spacing: -0.075em;
+  color: #d0d3d5;
+}
+.nav-menu:hover .nav-menu-dropdown {
+  display: block;
 }
 .nav-btn {
   width: 15px;

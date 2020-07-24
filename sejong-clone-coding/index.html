@@ -12,20 +12,70 @@
   <body>
     <header>
       <ul class="header-ul">
-        <li>
+        <li class="header-li">
           <a class="header-menu" href="http://www.sejong.ac.kr/#">IT서비스</a>
+          <div class="header-menu-dropdown">
+            <ul>
+              <li><a href="">PC원격지원</a></li>
+              <li><a href="">모바일(WIFI)</a></li>
+              <li><a href="">공용소프트웨어</a></li>
+              <li><a href="">virus백신</a></li>
+              <li><a href="">메일서비스</a></li>
+              <li><a href="">인터넷접속설정</a></li>
+              <li><a href="" onclick="window.open('http://board.sejong.ac.kr/boardlist.do?bbsConfigFK=353','','status=no, resizable=no, width=700, height=650, scrollbars=yes, top=50,left=50')">전산FAQ</a></li>
+              <li><a href="">IP주소신청안내</a></li>
+              <li><a href="">오피스365계정신청</a></li>
+            </ul>
+          </div>
         </li>
-        <li class="with-partition">
-          <a class="header-menu" href="">학생</a>
+        <li class="header-li">
+          <a class="header-menu with-partition" href="http://www.sejong.ac.kr/#">학생</a>
+          <div class="header-menu-dropdown">
+            <ul>
+              <li><a href="http://uis.sejong.ac.kr" target="_blank">학사정보시스템</a></li>
+              <li><a href="/community/QNA.html">학사Q&amp;A</a></li>
+              <li><a href="https://portal.office.com" target="_blank">재학생메일</a></li>
+              <li><a href="/unilife/study_02.html">수강신청</a></li>
+              <li><a href="http://udream.sejong.ac.kr" target="_blank">학생경력개발시스템</a></li>
+              <li><a href="http://volunteer.sejong.ac.kr" target="_blank">사회봉사</a></li>
+              <li><a href="/unilife/studentlife.html">학생복지</a></li>
+              <li><a href="#none" onclick="window.open('http://board.sejong.ac.kr/boardview.do?pkid=121345&amp;currentPage=2&amp;searchField=ALL&amp;siteGubun=19&amp;menuGubun=1&amp;bbsConfigFK=335&amp;searchLowItem=ALL&amp;searchValue=','','status=no, resizable=no, width=750, height=650, scrollbars=yes, top=50,left=50')">수강편람</a></li>
+              <li><a href="#none" onclick="window.open('http://board.sejong.ac.kr/boardlist.do?bbsConfigFK=692','','status=no, resizable=no, width=700, height=650, scrollbars=no, top=50,left=50')">학교양식</a></li>
+              <li><a href="/unilife/studentcard_01.html">학생증발급</a></li>
+              <li><a href="http://abeek.sejong.ac.kr" target="_blank">공학인증</a></li>
+              <li><a href="http://safety.sejong.ac.kr" target="_blank">연구실통합포털</a></li>
+              <li><a href="/unilife/newscholarship.html">장학제도</a></li>
+              <!-- <li><a href="http://geptest.sejong.ac.kr" target="_blank">교양영어테스트</a></li> -->
+              <li><a href="http://do.sejong.ac.kr" target="_blank">비교과통합관리시스템</a></li>
+            </ul>
+          </div>
         </li>
-        <li class="with-partition">
-          <a class="header-menu" href="">교직원</a>
+        <li class="header-li">
+          <a class="header-menu with-partition" href="http://www.sejong.ac.kr/#">교직원</a>
+          <div class="header-menu-dropdown">
+            <ul>
+              <li><a href="https://portal.sejong.ac.kr/" target="_blank">세종포털</a></li>
+              <li><a href="http://uis.sejong.ac.kr" target="_blank">학사정보시스템</a></li>
+              <li><a href="http://mail.sejong.ac.kr" target="_blank">교직원메일</a></li>
+              <li><a href="http://rnd.sejong.ac.kr" target="_blank">산학협력단</a></li>
+              <li><a href="http://abeek.sejong.ac.kr" target="_blank">공학인증</a></li>
+              <li><a href="http://ctl.sejong.ac.kr" target="_blank">교수학습개발센터</a></li>
+              <li><a href="/unilife/program_01.html">학사일정</a></li>
+              <!--<li><a href="http://labor.sejong.ac.kr" target="_blank">노동조합</a></li>-->
+              <li><a href="/sejong/rule.html">규정집</a></li>
+              <li><a href="#none" onclick="window.open('http://board.sejong.ac.kr/boardlist.do?bbsConfigFK=692','','status=no, resizable=no, width=650, height=650, scrollbars=no, top=50,left=50')">학교양식</a></li>
+              <li><a href="http://safety.sejong.ac.kr" target="_blank">연구실통합포털</a></li>
+              <li><a href="http://do.sejong.ac.kr" target="_blank">비교과통합관리시스템</a></li>
+            </ul>
+          </div>
         </li>
-        <li class="with-partition">
-          <a class="header-menu" href="">예비세종인</a>
+        <li class="header-li">
+          <a class="header-menu with-partition" href="http://www.sejong.ac.kr/#">예비세종인</a>
+          <div class="header-menu-dropdown">
+          </div>
         </li>
-        <li class="with-partition">
-          <a class="header-menu" href="http://eng.sejong.ac.kr">
+        <li class="header-li">
+          <a class="header-menu with-partition" href="http://eng.sejong.ac.kr">
             ENGLISH
           </a>
         </li>
@@ -55,8 +105,32 @@
         </a>
         <ul class="nav-ul">
             <li>
-                <a href="http://www.sejong.ac.kr/sejong/educational_02.html" class="nav-menu">세종소개</a>
+              <a href="http://www.sejong.ac.kr/sejong/educational_02.html" class="nav-menu">세종소개</a>
+              <ul class="nav-menu-dropdown">
+                <li>
+                  <a href=""><span>학교법인</span></a>
+                </li>
+                <li>
+                  <a href=""><span>세종대학교</span></a>
+                </li>
+                <li>
+                  <a href=""><span>대학현황</span></a>
+                </li>
+                <li>
+                  <a href=""><span>세종상징</span></a>
+                </li>
+                <li>
+                  <a href=""><span>세종스토리</span></a>
+                </li>
+                <li>
+                  <a href=""><span>캠퍼스안내</span></a>
+                </li>
+                <li>
+                  <a href=""><span>교내명소</span></a>
+                </li>
+              </ul>
             </li>
+
             <li>
                 <a href="http://www.sejong.ac.kr/admission/graduate.html" class="nav-menu">입학안내</a>
             </li>
