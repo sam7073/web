@@ -27,6 +27,9 @@ li {
 a {
   text-decoration: none;
 }
+area {
+  display: inline;
+}
 input:focus,
 select:focus,
 textarea:focus,
@@ -163,20 +166,29 @@ ul {
   z-index: 10;
   display: none;
   position: absolute;
-  top: 100px;
+  top: 135px;
 }
-.nav-menu-dropdown li {
+.nav-menu-dropdown ul {
+  font-size: 0;
+}
+.nav-menu-dropdown ul li {
   position: relative;
   vertical-align: top;
   display: inline-block;
+  margin-left: 12px;
 }
-.nav-menu-dropdown li a {
+.nav-menu-dropdown ul li a span {
   line-height: 35px;
   font-size: 12px;
   letter-spacing: -0.075em;
   color: #d0d3d5;
+  padding-left: 12px;
+  border-left: 1px solid #5b6670;
 }
-.nav-menu:hover .nav-menu-dropdown {
+.nav-ul li:hover .nav-menu {
+  color: #c3002f;
+}
+.nav-ul li:hover .nav-menu-dropdown {
   display: block;
 }
 .nav-btn {

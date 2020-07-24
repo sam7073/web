@@ -20,15 +20,17 @@ function changeDot(dotNum) {
 
 function dotClickHandler(event) {
   if (event.target.innerHTML !== currentDot) {
-    changeDot(event.target.innerHTML);
+    changeDot(parseInt(event.target.innerHTML));
   }
 }
 
+function setPlayInterval() {
+  const newDot = (currentDot + 1) % 5;
+  changeDot(newDot);
+}
+
 function playBtnClickHandler() {
-  sliderInterval = setInterval(function () {
-    newDot = (currentDot + 1) % 5;
-    changeDot(newDot);
-  }, 3000);
+  sliderInterval = setInterval(setPlayInterval, 3000);
 }
 
 function stopBtnClickHandler() {
