@@ -1,0 +1,184 @@
+.overview-menu {
+  position: absolute;
+  top: 135px;
+  left: 0;
+  width: 100%;
+  width: 100%;
+  background: white;
+  border-top: 1px solid #f6f6f6;
+  border-bottom: 1px solid #e5e5e5;
+  z-index: 99;
+}
+.overview-menu-ul {
+  display: table;
+  table-layout: fixed;
+  border-collapse: collapse;
+  width: 1200px;
+  margin: 0 auto;
+}
+.overview-menu-ul > li {
+  padding-bottom: 41px;
+  position: relative;
+  padding-top: 28px;
+  padding-left: 25px;
+  display: table-cell;
+  border-left: 1px solid #f6f6f6;
+  border-right: 1px solid #f6f6f6;
+}
+.overview-menu-ul > li:hover {
+  background-color: #fdfdfd;
+}
+.overview-menu-ul > li:hover:before {
+  width: 100%;
+  height: 2px;
+  position: absolute;
+  top: -1px;
+  left: 0;
+  display: inline-block;
+  background: #dfdfdf;
+  content: "";
+}
+.overview-menu-ul > li > a {
+  display: inline-block;
+  vertical-align: top;
+  margin-bottom: 19px;
+  font-weight: bold;
+  font-size: 16px;
+  letter-spacing: -0.075em;
+  color: #333333;
+}
+.overview-menu-ul li a ul {
+  display: block;
+}
+.overview-menu-ul li a ul li {
+  display: list-item;
+}
+.overview-menu-ul li ul li a {
+  color: #666666;
+  font-size: 13px;
+  letter-spacing: -0.075em;
+  cursor: pointer !important;
+  text-decoration: none;
+}
+.overview-menu-ul > li > ul > li + li {
+  margin-top: 10px;
+}
+.overview-menu-ul > li > ul > li > a:hover {
+  color: #c3002f;
+}
+.main-image-container {
+  min-width: 1230px;
+  height: 620px;
+  position: relative;
+  overflow: hidden;
+}
+.main-image {
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  width: 100%;
+  height: 620px;
+  background-position: center center;
+  color: transparent;
+  transition: all 0.5s ease-in-out;
+  opacity: 0;
+}
+.first-image {
+  background-image: url("http://www.sejong.ac.kr/sogood_sm/2018_05_30/main_vi/img4.jpg");
+  opacity: 1;
+}
+.second-image {
+  background-image: url("http://www.sejong.ac.kr/sogood_sm/2018_05_30/main_vi/img1.jpg");
+}
+.third-image {
+  background-image: url("http://www.sejong.ac.kr/sogood_sm/2018_05_30/main_vi/img2.jpg");
+}
+.fourth-image {
+  background-image: url("http://www.sejong.ac.kr/sogood_sm/2018_05_30/main_vi/img3.jpg");
+}
+.fifth-image {
+  background-image: url("http://www.sejong.ac.kr/sogood_sm/2018_05_30/main_vi/img5.jpg");
+}
+.main-image-slide {
+  position: absolute;
+  width: 510px;
+  height: 190px;
+  bottom: 88px;
+  right: 50%;
+  margin-right: -600px;
+  padding-top: 45px;
+  background-image: url("http://www.sejong.ac.kr/sogood_sm/2018_05_30/img0.png");
+}
+.main-image-slide-btns {
+  position: absolute;
+  display: flex;
+  right: 15px;
+  top: 15px;
+  width: 112px;
+  height: 12px;
+}
+.dots {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+.dot {
+  padding: 0;
+  width: 12px;
+  height: 12px;
+  border: 1px solid white;
+  border-radius: 50%;
+  margin-left: 5px;
+  color: transparent;
+}
+.first-dot {
+  margin-left: 0;
+}
+.active {
+  background-color: white;
+}
+.main-image-slide-dots {
+}
+.slide-contents {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.text0 {
+  font-size: 18px;
+  width: 446px;
+  height: 15px;
+  margin-bottom: 12px;
+  color: white;
+  letter-spacing: -0.12em;
+}
+.text1 {
+  font-size: 28px;
+  width: 446px;
+  height: 37px;
+  color: white;
+  padding-bottom: 8px;
+  letter-spacing: -0.12em;
+}
+.text2 {
+  font-size: 14px;
+  width: 446px;
+  height: 107px;
+  color: #e3bec6;
+  padding-top: 9px;
+  letter-spacing: -0.095em;
+}
+.text2 div {
+  width: 446px;
+  height: 22px;
+}
+.line-container {
+  width: 446px;
+}
+.horizontal-line {
+  width: 30px;
+  border: 1px solid white;
+}
+.invisible {
+  display: none;
+}

@@ -41,8 +41,11 @@
 
 ### 3. sejong
 - 세종대 홈페이지 클론 코딩.
-- 기능까지 최대한 비슷하게 구현하기.
-- 진행 중
+- 기능까지 최대한 비슷하게 구현.
+- vanila JS 로 만듦
+- 상단 이미지 슬라이드, 하단 배너 슬라이드 JS로만 코딩, setInterval과 clearInterval 학습.
+- hover menu css로만 구현, css selector ':hover', ':before', ':after', '+' 학습.
+- image에 map 적용하는 법 학습.
 - https://sam7073.github.io/web/sejong-clone-coding
 - 원본 사이트 : http://www.sejong.ac.kr/
 
