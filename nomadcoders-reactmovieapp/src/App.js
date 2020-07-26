@@ -1,7 +1,13 @@
 import React from "react";
+import Potato from "./Potato";
 
 function App() {
-  return <div>asdasd</div>;
+  return (
+    <div>
+      <h1>Hello, Hoon!</h1>
+      <Potato />
+    </div>
+  );
 }
 
 export default App;
